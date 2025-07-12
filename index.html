@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- the first screen -->
+    <div id = "screen-one" class = "screen active">
+        <h1>ROCK , PAPER , SCISSOR GAME</h1>
+
+        <div id = "rule-container">
+            <h4>RULES OF THE GAME</h4>
+            <p>ROCK BEATS SCISSOR</p>
+            <p>PAPER BEATS ROCK</p>
+            <p>SCISSOR BEATS PAPER</p>
+        </div>
+
+        <button id = "start-playing">START PLAYING</button>
+    </div>
+
+
+    <!-- the game screen -->
+    <div id = "screen-two" class = "screen">
+        <!-- CHOOSING PART -->
+        <div id = "choice-container">
+            <div class = "individual-container">
+                <button class = "img-container" id = "rock-container">
+                    <img id = "rock" src = "rock.png">
+                </button>
+                <button class = "choice-text">ROCK</button>
+            </div>
+
+            <div class = "individual-container">
+                <button class = "img-container" id = "scisor-container">
+                    <img id = "scisor" src = "scisor.png">
+                </button>
+                <button class = "choice-text">SCISSOR</button>
+            </div>
+
+            <div class = "individual-container">
+                <button class = "img-container" id = "paper-container">
+                    <img id = "paper" src = "paper.png">
+                </button>
+                <button class = "choice-text">PAPER</button>
+            </div>
+        </div>
+
+        <!-- the score keeper -->
+        <div id = "score-keeper">
+            <!-- for displaying different images of ur and the comp choice -->
+            <div id = "choice-displayer">
+                
+                <p class= "text-front-of-choice">COMPUTER CHOICE : </p>
+                <button id = "comp-choice">
+                    muahah
+                </button>
+
+                <p class= "text-front-of-choice"> PLAYER CHOICE : </p>
+                <button id = "player-choice">
+                    bla bal
+                </button>
+
+            </div>
+            <p>
+            COMPUTER : <span id = "comp-score">0</span>
+            PLAYER : <span id = "player-score">0</span>
+            </p>
+
+            <p id = "tie">
+                TIE : <span id = "tie-score">0</span>
+            </p>
+        </div>
+
+        <!-- The quit game part -->
+
+        <button id = "quit-button">QUIT GAME</button>
+
+    </div>
+
+
+    <!-- the result screen -->
+    <div id = "screen-three" class = "screen">
+        <h1>THANK YOU FOR PLAYING THIS GAME</h1>
+        <p>You scored <span id = "final-player-score">THIS MUCH</span> and the computer scored <span id  = "final-computer-score">THIS MUCH</span>. And there have been <span id = "final-tie-result">0</span> tie results.<p>
+        <!-- TO BE REPLACED WITH SOMETHING FROM JS -->
+        <p id = "Final-statement">TO BE REPLACED WITH SOMETHING FROM JS</p>
+        <button id = "replay-button">REPLAY</button>
+    </div>
+    
+
+    <script src = "script.js"></script>
+</body>
+</html>

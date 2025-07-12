@@ -1,0 +1,178 @@
+body{
+    background-color: beige;
+    display : flex;
+    flex-direction: column;
+    padding : 30px;
+    align-items: center;
+    justify-content: center;
+    height : 590px;
+}
+
+/* the screen which is active will be the visible */
+
+.screen{
+    display: none;
+}
+
+.screen.active{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#screen-one p , #screen-one h1, #screen-one h4{
+    font-size : 20px; 
+    font-family: cursive;
+    color:rgb(71, 27, 192);
+    margin : 10px;
+}
+
+#rule-container{
+    margin-top : 10px;
+    margin-bottom : 20px;
+    background-color: black;
+    display : flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 200px;
+    width : 400px;
+    height : 200px;
+}
+
+#rule-container h4 , #rule-container p{
+    color:rgb(27, 192, 115);
+}
+
+#screen-one button{
+    font-family: cursive;
+    color:rgb(175, 20, 167);
+    font-size: 20px;
+    border-radius: 10px;
+    border-style : solid;
+    transition : transform 0.2s;
+    background-color : coral;
+}
+
+#screen-one button:hover{
+    transform : translateY(-4px)
+}
+
+
+/* game screen styles */
+
+#choice-container{
+    display : flex;
+    width : 100%;
+    height : 300px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.individual-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    margin-bottom : 0px;
+}
+
+.img-container{
+    width : 200px;
+    height : 200px;
+    border-style : solid;
+    border-radius: 150px;
+    margin-bottom : 10px;
+    background-color: black;
+}
+
+.individual-container .choice-text , #quit-button , #replay-button{
+    width : 100px;
+    border-style : solid;
+    border-radius : 10px;
+    font-family : cursive;
+    font-weight : 800;
+    font-size : 20px;
+    width : 200px;
+    background-color: brown;
+    transition : opacity,transform 0.15s ease-out;
+}
+
+.individual-container .choice-text:hover , #quit-button:hover , .img-container:hover{
+    transform : translate3d( 2px , 5px , 2px);
+    opacity: 0.6;
+}
+
+.text-front-of-choice{
+    display : inline-block;
+}
+
+#choice-displayer{
+    margin-bottom : 10px;
+}
+
+#player-choice , #comp-choice{
+    /* they will contain different image accordingly */
+    margin-right : 30px;
+    margin-left : 10px;
+    width : 100px;
+    height : 100px;
+    border-radius : 50px;
+    border-style : solid;
+    background-color: black;
+    
+
+}
+
+#score-keeper p{
+    margin-top : 0;
+    font-family : cursive;
+}
+
+#comp-score{
+    margin-right : 50px;
+}
+
+#tie{
+    text-align : center;
+    margin-bottom : 40px;
+}
+
+/* fixing the images */
+
+#rock , #scisor , #paper{
+    object-fit: cover;
+    width : 100%;
+    height : 100%;
+    border-radius: 150px;
+}
+
+/* we need some additional property */
+#paper{
+    object-position: left;
+}
+
+/* the last screen */
+
+#screen-three h1{
+    font-size : 40px; 
+    font-family: cursive;
+    color:black;
+    margin : 10px;
+}
+
+#screen-three p{
+    font-size : 20px; 
+    font-family: cursive;
+}
+
+#replay-button{
+    background-color: aqua;
+}
+
+
+
+
+
